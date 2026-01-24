@@ -8,7 +8,7 @@ local sbar = require("sketchybar")
 
 -- Draw the bar on top of everything
 sbar.bar({
-  topmost = "on", -- <boolean> supports on/off/true/false/etc.
+	topmost = "off", -- <boolean> supports on/off/true/false/etc.
 })
 
 require("init")
