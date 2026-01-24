@@ -2,4 +2,13 @@
 
 -- Load the sketchybar-package and prepare the helper binaries
 require("helpers")
+
+-- Ensure the SketchyBar lua module is loaded (helpers usually sets up package.cpath)
+local sbar = require("sketchybar")
+
+-- Draw the bar on top of everything
+sbar.bar({
+  topmost = "on", -- <boolean> supports on/off/true/false/etc.
+})
+
 require("init")

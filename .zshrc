@@ -85,6 +85,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source <(fzf --zsh)
 
 # User configuration
 
@@ -126,6 +127,8 @@ alias gb="git branch"
 
 alias gi="git init"
 alias gcl="git clone"
+
+alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
